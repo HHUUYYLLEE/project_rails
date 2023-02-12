@@ -1,0 +1,8 @@
+<p style="text-align:center; color:red; font-size:3rem">Today is <%= Date.today %></p>
+<h1>Home Page</h1>
+<% if user_signed_in? %>
+<%= link_to "List of songs", songs_path %>
+<% else %>
+<p></p>
+<% end %>
+
